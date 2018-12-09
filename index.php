@@ -35,7 +35,7 @@ $perso = new Personnage([
 ]);
 // var_dump($perso);
 
-$db = new PDO('mysql:host=localhost;dbname=php', 'phpmy', 'phpmy');
+$db = new PDO('mysql:host=localhost;dbname=php', 'php', 'php');
 $persoRepo = new PersonnagesRepository($db);
 
 if($persoRepo->add($perso)) echo "Personnage ".$perso->nom()." ajouté dans la base de données!";

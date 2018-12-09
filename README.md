@@ -13,3 +13,27 @@ Notions abordées:
 - Instances d'objets
 - Autoloading
 - Design pattern Repository 
+
+
+Base de données à créer :
+
+hôte: localhost
+nom de la base: php
+utilisateur: php
+mot de passe: php
+
+(ou bien changer les identifiants dans index.php ligne 38)
+
+
+Table SQL à créer:
+
+```
+CREATE TABLE `personnages` (
+    `id` INT NOT NULL AUTO_INCREMENT ,
+    `nom` VARCHAR(32) NOT NULL ,
+    `forcePerso` INT NULL ,
+    `degats` INT NULL ,
+    `niveau` INT NULL ,
+    `experience` INT NULL ,
+PRIMARY KEY (`id`)) ENGINE = InnoDB;
+```
