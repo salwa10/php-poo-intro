@@ -17,10 +17,12 @@ Notions abordées:
 
 Base de données à créer :
 
+```
 hôte: localhost
 nom de la base: php
 utilisateur: php
 mot de passe: php
+```
 
 (ou bien changer les identifiants dans index.php ligne 38)
 
