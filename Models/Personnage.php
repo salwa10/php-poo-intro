@@ -13,7 +13,6 @@ class Personnage
         if (!empty($values)) {
             $this->hydrate($values);
         }
-
     }
 
     // PARCOURS du tableau $donnees (avec pour clé $cle et pour valeur $valeur)
@@ -48,18 +47,31 @@ class Personnage
         }
     }
 
+
     public function id()
-    {return $this->_id;}
+    {
+        return $this->_id;
+    }
     public function nom()
-    {return $this->_nom;}
+    {
+        return $this->_nom;
+    }
     public function forcePerso()
-    {return $this->_forcePerso;}
+    {
+        return $this->_forcePerso;
+    }
     public function degats()
-    {return $this->_degats;}
+    {
+        return $this->_degats;
+    }
     public function niveau()
-    {return $this->_niveau;}
+    {
+        return $this->_niveau;
+    }
     public function experience()
-    {return $this->_experience;}
+    {
+        return $this->_experience;
+    }
 
     public function setId($id)
     {
@@ -74,6 +86,11 @@ class Personnage
         if (is_string($nom) && strlen($nom) <= 30) {
             $this->_nom = $nom;
         }
+    }
+
+    public function forceAuHasard()
+    {
+        $this->setForcePerso(rand(0,100));
     }
 
     public function setForcePerso($forcePerso)
